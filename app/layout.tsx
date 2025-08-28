@@ -6,18 +6,28 @@ import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://moodtracker.meliana.vercel.com"),
+  metadataBase: new URL("https://fe-technicaltest-meliana.vercel.app"),
   title: "Mood Tracker - Track Your Daily Emotions",
   description: "Track your daily emotions, gain insights into your mental well-being, and celebrate your emotional journey.",
   authors: [{ name: "Mood Tracker App" }],
   keywords: ["mood tracker", "mental health", "emotions", "wellness", "daily mood", "emotional well-being"],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+  },
   openGraph: {
     title: "Mood Tracker - Track Your Daily Emotions",
     description: "Beautiful mood tracking app to monitor your daily emotions and gain insights into your mental well-being.",
     type: "website",
     images: ["/logo.png"],
   },
-};
+  twitter: {
+    card: "summary_large_image",
+    title: "Mood Tracker - Track Your Daily Emotions",
+    description: "Beautiful mood tracking app to monitor your daily emotions and gain insights into your mental well-being.",
+    images: ["/logo.png"],
+  },
+}
 
 export default function RootLayout({
   children,

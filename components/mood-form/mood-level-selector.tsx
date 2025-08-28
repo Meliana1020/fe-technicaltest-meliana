@@ -13,7 +13,7 @@ export function MoodLevelSelector({ selectedMood, setSelectedMood }: MoodLevelSe
       <Label className="text-sm font-semibold text-foreground">
         Mood Level
       </Label>
-      <div className="grid grid-cols-5 gap-1">
+      <div className="grid grid-cols-3 gap-1">
         {Object.entries(MOODS).map(([level, mood]) => {
           const numLevel = parseInt(level) as MoodLevel;
           const isSelected = selectedMood === numLevel;

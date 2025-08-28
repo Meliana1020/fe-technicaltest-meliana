@@ -21,7 +21,7 @@ export default function WeeklyInsights({ averageMood, entriesCount, moodTrend }:
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 grid-cols-3 gap-4">
           <div className="text-center p-4 bg-accent/50 rounded-lg">
             <div className="text-2xl mb-2">
               {MOOD_EMOJIS[Math.round(averageMood) as 1 | 2 | 3 | 4 | 5]}

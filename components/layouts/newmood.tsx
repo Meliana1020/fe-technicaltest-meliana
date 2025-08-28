@@ -8,7 +8,7 @@ export default function NewMoodLayout() {
 
   return (
     <div className="min-h-screen py-8 px-4 flex-1">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-xl mx-auto">
         <h1 className="text-2xl font-bold mb-4">Track Today&apos;s Mood</h1>
         <MoodForm
           onSuccess={() => router.push("/moods")}
